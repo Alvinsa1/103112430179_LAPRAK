@@ -201,7 +201,7 @@ int main() {
 Jadi program C++ ini mengimplementasikan struktur data Single Linked List yang menyimpan data berupa bilangan bulat (int). Program ini menggunakan pendekatan global pointer (Node* kepala) untuk menunjuk ke node pertama (head) dari list dan menyediakan serangkaian fungsi dasar untuk mengelola list, yang diakses melalui antarmuka menu di fungsi main().
 
 > Output
-> ![Screenshot bagian x](output34/guide..jpeg)
+> ![Screenshot bagian x](output/guide..jpeg)
 
 
 ## Unguided
@@ -323,7 +323,7 @@ int main() {
 
 Jadi program C++ ini mengimplementasikan struktur data Queue (Antrian) dengan prinsip FIFO (First In, First Out), di mana pembeli yang pertama masuk akan dilayani (dihapus) pertama kali. Implementasi Queue ini memanfaatkan Single Linked List sebagai dasar, yang menyimpan data pembeli (nama dan pesanan).
 > Output
-> ![Screenshot bagian x](output34/unguided1.jpeg)
+> ![Screenshot bagian x](output/unguided1.jpeg)
 
 
 
@@ -411,5 +411,5 @@ int main() {
 Program C++ ini mengimplementasikan operasi dasar dan fungsi inti untuk membalikkan (reverse) urutan elemen dalam struktur data Single Linked List yang menyimpan bilangan bulat (int). struct Node: Mendefinisikan elemen list, yang berisi int data dan pointer Node* next yang menghubungkan ke node berikutnya, node* head: Pointer global yang menunjuk ke node pertama (kepala) list, tambahNode(int nilai): Fungsi untuk menambahkan node baru selalu di akhir list. Fungsi ini menelusuri list dari head sampai menemukan node terakhir (di mana temp->next adalah nullptr), lalu menautkan node baru di sana, tampilList(): Fungsi untuk menelusuri list dari awal sampai akhir dan mencetak seluruh elemen list secara berurutan, dipisahkan oleh ->.
 
 > Output
-> ![Screenshot bagian x](output34/unguided2.jpeg)
+> ![Screenshot bagian x](output/unguided2.jpeg)
 
