@@ -27,7 +27,7 @@ void tampil_pelajaran(pelajaran pel);
 
 Program C++ di atas mendefinisikan dan mendeklarasikan komponen dasar untuk mengelola data tentang suatu mata pelajaran. struct pelajaran	Ini adalah struktur data (atau struct) yang menjadi model untuk sebuah entitas "mata pelajaran". Ia memiliki dua anggota utama: namaMapel (untuk menyimpan nama mata pelajaran, seperti "Matematika") dan kodeMapel (untuk menyimpan kode unik mata pelajaran, seperti "MTK101"), keduanya bertipe std::string, pelajaran create_pelajaran(std::string nama, std::string kode);	Ini adalah prototipe fungsi yang berfungsi sebagai konstruktor atau factory untuk tipe data pelajaran. Fungsi ini akan menerima dua string (nama dan kode) sebagai masukan, kemudian membuat dan mengembalikan sebuah objek pelajaran baru yang telah terinisialisasi dengan nilai-nilai tersebut, void tampil_pelajaran(pelajaran pel);	Ini adalah prototipe fungsi yang berfungsi untuk menampilkan (mencetak) detail dari sebuah objek pelajaran. Fungsi ini menerima satu objek pelajaran sebagai masukan (parameter) dan tidak mengembalikan nilai (void), melainkan melakukan aksi (mencetak) ke output standar (konsol).
 
-> Output
+> output
 > ![Screenshot bagian x](output3/guided.jpeg)
 
 
