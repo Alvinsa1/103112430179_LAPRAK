@@ -117,7 +117,7 @@ int main() {
 Program C++ ini adalah sistem sederhana untuk mengelola dan menghitung nilai akhir bagi sejumlah Peserta Didik (Mahasiswa) menggunakan struktur data (struct) dan fungsi modular. struct PesertaDidik Struktur ini mendefinisikan blueprint untuk satu entitas peserta didik, menggabungkan data pribadi dan data nilai dalam satu unit. Anggotanya meliputi Data Diri: namaLengkap dan nomorInduk (NIM), keduanya bertipe string, Data Nilai Input: nilaiTengah (UTS), nilaiAkhirSemester (UAS), dan nilaiProyek (Tugas), semuanya bertipe float, Data Nilai Hasil: nilaiTotal, bertipe float, yang akan menyimpan hasil perhitungan nilai akhir. Lalu fungsi ini menghitung nilai akhir (nilaiTotal) seorang peserta didik berdasarkan tiga komponen nilai input dengan bobot sebagai berikut Nilai Tengah Semester (UTS): 30% (0.3), Nilai Akhir Semester (UAS): 40% (0.4), Nilai Proyek/Tugas: 30% (0.3). Kemudian void rekamDataPesertaDidik(PesertaDidik &siswa) Fungsi ini bertanggung jawab untuk berinteraksi dengan pengguna dan mengisi data ke dalam satu objek PesertaDidik. Fungsi menggunakan passing by reference (&siswa) sehingga perubahan yang dilakukan pada siswa (input dari user) akan langsung memodifikasi objek asli di fungsi main. Fungsi ini membaca nama dan NIM menggunakan getline() (untuk mengakomodasi spasi) dan nilai-nilai numerik menggunakan cin >>, Setelah semua nilai input dimasukkan, fungsi ini secara otomatis memanggil hitungNilaiTotal untuk menentukan dan menyimpan nilai akhir (siswa.nilaiTotal), Penggunaan cin.ignore() diperlukan untuk membersihkan buffer input setelah pembacaan nilai numerik, mencegah masalah dengan pemanggilan getline() berikutnya.
 
 
-> ![Screenshot bagian x](output3/unguided1.jpeg)
+> ![Screenshot bagian x](output/unguided1.jpeg)
 
 
 
@@ -185,7 +185,7 @@ void tampil_pelajaran(pelajaran pel);
 Program ini adalah contoh pemrograman modular C++ yang mengimplementasikan sebuah modul untuk mengelola data pelajaran. Program dibagi menjadi tiga bagian: Header File (pelajaran.h) yang mendefinisikan struktur data pelajaran (terdiri dari namaMapel dan kodeMapel) serta mendeklarasikan fungsi-fungsi terkait; File Implementasi (pelajaran.cpp) yang berisi definisi fungsional dari create_pelajaran untuk membuat objek baru dan tampil_pelajaran untuk mencetak detail objek ke konsol; dan File Utama (main.cpp) yang bertindak sebagai driver, menginisialisasi nama dan kode pelajaran ("Struktur Data", "STD"), memanggil create_pelajaran untuk membuat objek, dan kemudian memanggil tampil_pelajaran untuk menampilkan hasilnya. Secara keseluruhan, program ini menunjukkan bagaimana memisahkan antarmuka (deklarasi) dari implementasi (definisi) untuk menciptakan kode yang lebih terorganisir.
 
 > Output
-> ![Screenshot bagian x](output3/unguided2.jpeg)
+> ![Screenshot bagian x](output/unguided2.jpeg)
 
 ### Soal 3
 
@@ -267,7 +267,7 @@ int main() {
 
 Jadi Program C++ ini adalah demonstrasi mengenai mekanisme pemanggilan fungsi (passing mechanisms) dan operasi pertukaran nilai (swapping) pada berbagai tipe data: matriks dan variabel tunggal, menggunakan baik passing by reference maupun passing by pointer. void sajikanMatriks(int matriks[3][3]) Fungsi ini bertanggung jawab untuk mencetak (menyajikan) isi dari sebuah matriks 3×3 integer ke konsol. Ia menggunakan dua loop bersarang untuk mengiterasi melalui setiap elemen matriks, mencetaknya, dan menambahkan baris baru (endl) setelah setiap baris selesai dicetak, void gantiNilaiLokal(int &angka1, int &angka2) Fungsi ini melakukan operasi pertukaran (swap) nilai antara dua variabel integer. Kunci di sini adalah penggunaan referensi (&) pada parameter. Ini berarti fungsi bekerja langsung dengan variabel asli di memori (bukan salinannya), sehingga perubahan nilai (pertukaran) akan tercermin di luar fungsi, void gantiElemenMatriks(int matriks1[3][3], int matriks2[3][3], int barisKe, int kolomKe) Fungsi ini menukar nilai elemen pada posisi tertentu (barisKe, kolomKe) antara dua matriks 3×3. Mirip dengan fungsi di atas, karena array (termasuk matriks) di C++ selalu dilewatkan secara by-reference (walaupun tidak menggunakan simbol &), pertukaran elemen akan memengaruhi matriks asli (MatriksUtama dan MatriksPembanding) yang ada di fungsi main.
 > Output
-> ![Screenshot bagian x](output3/unguided3.jpeg)
+> ![Screenshot bagian x](output/unguided3.jpeg)
 # AlvinsaHafizhArkaan_103112430179_modul3.
 LAPRAK
 
