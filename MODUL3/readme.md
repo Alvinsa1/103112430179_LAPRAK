@@ -40,7 +40,6 @@ Program C++ di atas mendefinisikan dan mendeklarasikan komponen dasar untuk meng
 #include <string>
 using namespace std;
 
-// Struktur data untuk merekam data diri dan nilai Peserta Didik
 struct PesertaDidik {
     string namaLengkap;    // Nama Mahasiswa
     string nomorInduk;     // NIM (Nomor Induk Mahasiswa)
@@ -50,13 +49,11 @@ struct PesertaDidik {
     float nilaiTotal;      // Nilai Akhir
 };
 
-// Fungsi untuk menghitung nilai total berdasarkan bobot
 float hitungNilaiTotal(float nilaiTengah, float nilaiAkhirSemester, float nilaiProyek) {
     // Bobot: Tengah Semester 30%, Akhir Semester 40%, Proyek 30%
     return (0.3 * nilaiTengah) + (0.4 * nilaiAkhirSemester) + (0.3 * nilaiProyek);
 }
 
-// Fungsi untuk memasukkan data Peserta Didik
 void rekamDataPesertaDidik(PesertaDidik &siswa) {
     cout << "Masukkan Nama Lengkap          : ";
     getline(cin, siswa.namaLengkap);
@@ -72,7 +69,6 @@ void rekamDataPesertaDidik(PesertaDidik &siswa) {
     siswa.nilaiTotal = hitungNilaiTotal(siswa.nilaiTengah, siswa.nilaiAkhirSemester, siswa.nilaiProyek);
 }
 
-// Fungsi untuk menyajikan data seluruh Peserta Didik
 void tampilkanDataPesertaDidik(PesertaDidik daftarSiswa[], int total) {
     cout << "\n==============================================\n";
     cout << "Laporan Data Peserta Didik\n";
